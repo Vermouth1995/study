@@ -1,10 +1,10 @@
 "use strict";
 
 for (var i = 1;i < 10;i++) {
-  var stri = '+' + '—'.repeat(8);
-  console.log(stri.repeat(9) + '+');
+  var str = '+' + '—'.repeat(8);
+  console.log(str.repeat(9) + '+');
   for (var j = 1;j <= i;j++) {
-    var expression = j + '*' + i + '=' + i*j + ' ';
+    var expression = i + '*' + j + '=' + i*j + ' ';
     process.stdout.write('|' + ' ' + expression + ' '.repeat(7 - expression.length));
   }
   if(j < 10){
@@ -14,4 +14,4 @@ for (var i = 1;i < 10;i++) {
     console.log('|');
   }
 }
-console.log(stri.repeat(9) + '+');
+console.log(str.repeat(9) + '+');
