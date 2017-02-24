@@ -1,5 +1,7 @@
 "use strict";
+
 var expArr = new Array(9);
+
 function exp() {
     var a = Math.ceil(Math.random() * 9);
     var b = Math.ceil(Math.random() * 9);
